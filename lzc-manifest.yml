@@ -1,0 +1,27 @@
+lzc-sdk-version: "0.1"
+name: Duck-UI
+package: cloud.lazycat.app.duck-ui
+version: 0.0.1
+description: DuckDB的Web交互工具
+homepage: https://github.com/caioricciuti/duck-ui
+author: czyt
+application:
+  subdomain: duck-ui
+  background_task: false
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  public_path:
+    - /
+  routes:
+    - /=http://duck-ui.cloud.lazycat.app.duck-ui.lzcapp:5522/
+      
+services:
+  duck-ui:
+    image: registry.lazycat.cloud/czyt/caioricciuti/duck-ui:8eb609274896dd8f
+    environment:
+      - DUCK_UI_PORT=5522
+unsupported_platforms:
+  - ios
+  - android
