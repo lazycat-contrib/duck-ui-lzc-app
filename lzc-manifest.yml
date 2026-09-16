@@ -4,14 +4,12 @@ application:
   multi_instance: false
   public_path:
     - /
-
   upstreams:
     - location: /
       backend: http://duck-ui:5522/
-
 services:
   duck-ui:
     # upstream: ghcr.io/caioricciuti/duck-ui:1.2.1
-    image: ghcr.io/caioricciuti/duck-ui:1.2.1
+    image: registry.lazycat.cloud/czyt/caioricciuti/duck-ui:9352ed0d152258bf
     environment:
       - DUCK_UI_PORT=5522
