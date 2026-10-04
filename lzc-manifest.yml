@@ -9,7 +9,7 @@ application:
       backend: http://duck-ui:5522/
 services:
   duck-ui:
-    # upstream: ghcr.io/caioricciuti/duck-ui:2.1.1
-    image: registry.lazycat.cloud/czyt/caioricciuti/duck-ui:3871e4d3f6244e92
+    # upstream: ghcr.io/caioricciuti/duck-ui:2.4.0
+    image: registry.lazycat.cloud/czyt/caioricciuti/duck-ui:635c774e8f22c06d
     environment:
       - DUCK_UI_PORT=5522
