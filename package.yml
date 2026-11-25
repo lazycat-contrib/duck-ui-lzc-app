@@ -1,6 +1,6 @@
 package: cloud.lazycat.app.duck-ui
 license: MIT
-version: 2.5.1
+version: 2.6.0
 name: Duck-UI
 description: "DuckDB的Web交互工具"
 min_os_version: "1.5.0"
